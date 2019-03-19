@@ -1,29 +1,17 @@
 # vue-blog
 
-## Project setup
-```
-npm install
-```
+This Repo is a one test with VueJS, Github pages, mobile build and any Api to store data.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Todo
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- [ ] Implement Android Build with Docker https://github.com/oren/docker-cordova
+- [ ] Store posts with gists/gsheets/firebase
+- [ ] Blog Layout
+- [ ] Seo Analitycs 
 
-### Run your tests
-```
-npm run test
-```
+## Motivation
 
-### Lints and fixes files
-```
-npm run lint
-```
+Study and test to create a free, open source blog (web/mobile app) with efficient technology.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
