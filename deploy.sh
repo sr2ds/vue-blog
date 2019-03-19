@@ -2,7 +2,7 @@
 
 # abort on errors
 set -e
-sas
+
 # build
 npm run build
 
