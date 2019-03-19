@@ -1,0 +1,4 @@
+#Tue Mar 19 17:16:03 BRT 2019
+base.0=/Users/david/apps/vue-blog/cordova/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
