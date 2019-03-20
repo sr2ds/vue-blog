@@ -3,8 +3,8 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="../">
-            <img src alt="Logo">
+          <a class="navbar-item" >
+            Vue Blog
           </a>
           <span class="navbar-burger burger" data-target="navbarMenu">
             <span></span>
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: "NavBar",
+  name: "NavBar"
 };
 </script>
 
