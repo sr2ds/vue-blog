@@ -4,7 +4,7 @@
       <div class="media">
         <div class="media-center">
           <img
-            src="http://www.radfaces.com/images/avatars/daria-morgendorffer.jpg"
+            :src="avatar"
             class="author-image"
             alt="Placeholder image"
           >
@@ -32,7 +32,12 @@
 </template>
 <script>
 export default {
-  name: "ArticleCard"
+  name: "ArticleCard",
+  data() {
+    return {
+      avatar: `https://api.adorable.io/avatars/204/${Math.random()}@adorable.io.png`
+    }
+  }
 };
 </script>
 <style scoped>
