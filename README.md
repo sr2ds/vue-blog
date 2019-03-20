@@ -14,7 +14,16 @@ Study and test to create a free, open source blog (web/mobile app) with efficien
 - [ ] Blog Layout
 - [ ] Seo Analitycs
 
-## Build Android (in development)
+
+## Builds and Run
+
+### Local Run
+
+```
+npm run serve
+```
+
+### Build Android (in development)
 
 To make your .apk on root project folder as app-debug.apk, run:
 ```
