@@ -10,8 +10,8 @@ Study and test to create a free, open source blog (web/mobile app) with efficien
 - [x] Implement Android Build
 - [x] Simplify Android Build with npm script in local enviroment
 - [ ] Run Android Build with Dockerized Cordova enviroment
-- [ ] Store posts with gists/gsheets/firebase
-- [ ] Blog Layout
+- [ ] Dinamic posts with data store on gists/gsheets/firebase
+- [x] Blog Layout
 - [ ] Seo Analitycs
 
 
