@@ -1,1 +1,13 @@
-{"name":"io.cordova.hellocordova","version":"0.0.1","displayName":"HelloCordova","cordova":{"platforms":["android"]},"dependencies":{"cordova-android":"~7.1.4"}}
+{
+  "name": "io.cordova.hellocordova",
+  "version": "0.0.1",
+  "displayName": "HelloCordova",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-android": "~7.1.4"
+  }
+}

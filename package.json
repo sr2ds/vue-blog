@@ -5,9 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-android": "npm run build; (cd cordova && cordova build android --debug); cp cordova/platforms/android/app/build/outputs/apk/debug/app-debug.apk ."
   },
   "dependencies": {
+    "event-hooks-webpack-plugin": "^2.1.1",
     "vue": "^2.6.6"
   },
   "devDependencies": {
