@@ -12,7 +12,7 @@
         <div class="media-content has-text-centered">
           <p class="title article-title">Sapien eget mi proin sed 🔱</p>
           <p class="subtitle is-6 article-subtitle">
-            <a href="#">@daria</a> on February 17, 2018
+            <a href="#">@sr2ds</a> on Mar 20, 2019
           </p>
         </div>
       </div>
