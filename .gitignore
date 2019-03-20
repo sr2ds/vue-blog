@@ -20,4 +20,6 @@ yarn-error.log*
 *.sln
 *.sw*
 
+# Cordova files
 app-debug.apk
+cordova/www/*
