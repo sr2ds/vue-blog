@@ -14,7 +14,7 @@
         </div>
         <div id="navbarMenu" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item is-active">Home</a>
+            <!-- <a class="navbar-item is-active">Home</a> -->
             <a class="navbar-item" href="https://github.com/sr2ds/vue-blog">Source Code on Github </a>
           </div>
         </div>
