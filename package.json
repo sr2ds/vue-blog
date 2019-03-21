@@ -11,6 +11,7 @@
   "dependencies": {
     "bulma": "^0.7.4",
     "event-hooks-webpack-plugin": "^2.1.1",
+    "github-base": "^1.0.0",
     "vue": "^2.6.6"
   },
   "devDependencies": {
