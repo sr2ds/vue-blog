@@ -9,6 +9,7 @@
     "build-android": "npm run build; (cd cordova && cordova build android --debug); cp cordova/platforms/android/app/build/outputs/apk/debug/app-debug.apk ."
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "bulma": "^0.7.4",
     "event-hooks-webpack-plugin": "^2.1.1",
     "github-base": "^1.0.0",

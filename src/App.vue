@@ -11,17 +11,30 @@
 </template>
 
 <script>
-
 const NavBar = () => import("@/components/NavBar");
 const ArticleGrid = () => import("@/components/ArticleGrid");
 const HeroHeader = () => import("@/components/HeroHeader");
+import axios from "axios";
 
 export default {
   name: "app",
+  data() {
+    return {
+      articles: this.getArticles()
+    };
+  },
   components: {
     NavBar,
     ArticleGrid,
     HeroHeader
+  },
+  async created() {},
+  methods: {
+    async getArticles() {
+      let art = await this.$article.getArticlesList();
+      console.log(art)
+      return art
+    }
   }
 };
 </script>
