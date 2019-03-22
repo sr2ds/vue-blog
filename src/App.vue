@@ -14,7 +14,6 @@
 const NavBar = () => import("@/components/NavBar");
 const ArticleGrid = () => import("@/components/ArticleGrid");
 const HeroHeader = () => import("@/components/HeroHeader");
-import axios from "axios";
 
 export default {
   name: "app",
@@ -32,7 +31,6 @@ export default {
   methods: {
     async getArticles() {
       let art = await this.$article.getArticlesList();
-      console.log(art)
       return art
     }
   }
