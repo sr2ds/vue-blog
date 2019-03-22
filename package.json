@@ -13,7 +13,8 @@
     "bulma": "^0.7.4",
     "event-hooks-webpack-plugin": "^2.1.1",
     "github-base": "^1.0.0",
-    "vue": "^2.6.6"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
@@ -22,7 +23,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,
