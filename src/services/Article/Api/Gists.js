@@ -3,10 +3,10 @@ import axios from 'axios'
 
 const Gists = {
     indexFileDescript() {
-        return Vue.config.indexFileDescript
+        return window.indexFileDescript
     },
     owner() {
-        return Vue.config.ownerOfGist
+        return window.ownerOfGist
     },
 
     async getIndex() {

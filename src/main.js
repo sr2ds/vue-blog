@@ -13,8 +13,8 @@ Vue.config.productionTip = false
 
 
 // Global Blog Settings
-Vue.config.ownerOfGist = "sr2ds"
-Vue.config.indexFileDescript = "Index of my Vue-Blog"
+window.ownerOfGist = "sr2ds"
+window.indexFileDescript = "Index of my Vue-Blog"
 
 // Modules/Services
 Vue.prototype.$article = Article
