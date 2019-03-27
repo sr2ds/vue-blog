@@ -3,7 +3,7 @@
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" >
+          <a class="navbar-item">
             <router-link class="navbar-item" to="/">Vue Blog</router-link>
           </a>
           <span class="navbar-burger burger" data-target="navbarMenu">
@@ -14,10 +14,28 @@
         </div>
         <div id="navbarMenu" class="navbar-menu">
           <div class="navbar-end">
-            <!-- <a class="navbar-item is-active">Home</a> -->
-            <router-link class="navbar-item" v-if="this.$route.path != '/admin/login' && !this.$store.state.isLoggedIn" to="/admin/login">Login</router-link>
-            <a class="navbar-item" v-if="this.$store.state.isLoggedIn" @click='$store.dispatch("logout")'>Logout</a>
-            <a class="navbar-item" href="https://github.com/sr2ds/vue-blog">Source Code on Github </a>
+
+            <router-link
+              class="navbar-item"
+              v-if="this.$route.path != '/admin/login' && !this.$store.state.isLoggedIn"
+              to="/admin/login"
+            >Login</router-link>
+
+            <a
+              class="navbar-item"
+              v-if="!this.$store.state.isLoggedIn"
+              href="https://github.com/sr2ds/vue-blog"
+            >Source Code on Github</a>
+
+            <a class="navbar-item" v-if="this.$store.state.isLoggedIn">New Article</a>
+            <a class="navbar-item" v-if="this.$store.state.isLoggedIn">Blog Settings</a>
+
+            <a
+              class="navbar-item"
+              v-if="this.$store.state.isLoggedIn"
+              @click="$store.dispatch('logout')"
+            >Logout</a>
+
           </div>
         </div>
       </div>
