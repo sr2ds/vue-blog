@@ -18,7 +18,7 @@ Vue.use(VueAnalytics, {
 
 // Global Blog Settings
 window.ownerOfGist = "sr2ds"
-window.indexFileDescript = "Index of my Vue-Blog"
+window.indexFileDescript = "Index of my Vue-Blog "+ window.ownerOfGist
 
 // Modules/Services
 Vue.prototype.$article = Article
