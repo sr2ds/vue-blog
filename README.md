@@ -30,3 +30,16 @@ To make your .apk on root project folder as app-debug.apk, run:
 npm run build-android
 ```
 
+## Usage
+
+With vue-blog you can have your SPA blog without pay nothing for any. You only need these steps.
+
+### Prepare to store posts on Gists - GitHub
+
+Before run your vue-blog, for auth and make yours posts, you need generate a token on github:
+
+1. Access:  https://github.com/settings/tokens
+2. Cick on Generate New Token
+3. Confirm your password
+4. Select on scope: Gist - Create gists
+5. Done, save your token.
