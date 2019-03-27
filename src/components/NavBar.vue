@@ -15,7 +15,8 @@
         <div id="navbarMenu" class="navbar-menu">
           <div class="navbar-end">
             <!-- <a class="navbar-item is-active">Home</a> -->
-            <router-link class="navbar-item" v-if="this.$route.path != '/admin/login'" to="/admin/login">Login</router-link>
+            <router-link class="navbar-item" v-if="this.$route.path != '/admin/login' && !this.$store.state.isLoggedIn" to="/admin/login">Login</router-link>
+            <a class="navbar-item" v-if="this.$store.state.isLoggedIn" @click='$store.dispatch("logout")'>Logout</a>
             <a class="navbar-item" href="https://github.com/sr2ds/vue-blog">Source Code on Github </a>
           </div>
         </div>

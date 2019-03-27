@@ -1,5 +1,5 @@
 <template>
-  <div class="login">
+  <div class="login" v-if="!this.$store.state.isLoggedIn">
     <div class="field is-horizontal">
       <div class="field-label is-normal">
         <label class="label">Git User Account</label>
@@ -19,7 +19,13 @@
       <div class="field-body">
         <div class="field">
           <p class="control">
-            <input class="input" type="password" v-model="token" placeholder="Password Token">
+            <input
+              class="input"
+              type="password"
+              v-model="token"
+              placeholder="Password Token"
+              :class="[ token.length > 1 && token.length  < 10  ? 'is-danger' : ''] "
+            >
           </p>
         </div>
       </div>
@@ -40,13 +46,16 @@ export default {
   name: "Login",
   data() {
     return {
-      token: null,
+      token: "",
       ownerOfGist: window.ownerOfGist || "need set this in main.js"
     };
   },
   methods: {
     submit: function() {
-      alert(this.token)
+      if (this.token.length) {
+        this.$store.dispatch("login", this.token);
+        this.$router.push("/");
+      }
     }
   }
 };
