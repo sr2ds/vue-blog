@@ -11,9 +11,11 @@ Study and test to create a free, open source blog (web/mobile app) with efficien
 - [x] Simplify Android Build with npm script in local enviroment
 - [ ] Run Android Build with Dockerized Cordova enviroment
 - [ ] Dinamic posts with data store on gists/gsheets/firebase
-- [x] Blog Layout
+  - [x] Ready dinamic index on gists
+  - [x] Store Token on Vuex (login)
+  - [ ] Crud posts with GitHub API
+- [x] Initial Blog Layout
 - [ ] Seo Analitycs
-
 
 ## Builds and Run
 
@@ -28,6 +30,12 @@ npm run serve
 To make your .apk on root project folder as app-debug.apk, run:
 ```
 npm run build-android
+```
+
+### Upload to github Pages
+
+```
+npm run deploy
 ```
 
 ## Usage
