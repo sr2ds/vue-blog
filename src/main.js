@@ -2,6 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './routes'
 
+import VueAnalytics from 'vue-analytics'
+
+Vue.use(VueAnalytics, {
+  id: 'UA-137046286-1'
+})
+
 // VueBlog Services
 import Article from './services/Article'
 
