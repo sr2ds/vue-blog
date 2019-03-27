@@ -12,7 +12,6 @@
         </div>
       </div>
     </div>
-
     <div class="field is-horizontal">
       <div class="field-label is-normal">
         <label class="label">Token Git</label>
@@ -20,24 +19,36 @@
       <div class="field-body">
         <div class="field">
           <p class="control">
-            <input class="input" type="password" placeholder="Password Token">
+            <input class="input" type="password" v-model="token" placeholder="Password Token">
           </p>
         </div>
       </div>
+    </div>
+    <div class="field is-grouped is-grouped-right">
+      <p class="control">
+        <a class="button is-primary" @click="submit()">Login</a>
+      </p>
+      <p class="control">
+        <router-link to="/" class="button is-light">Cancel</router-link>
+      </p>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "Login",
   data() {
     return {
-      ownerOfGist: window.ownerOfGist || 'need set this in main.js'
+      token: null,
+      ownerOfGist: window.ownerOfGist || "need set this in main.js"
     };
   },
-  created() {}
+  methods: {
+    submit: function() {
+      alert(this.token)
+    }
+  }
 };
 </script>
 <style scoped>
