@@ -31,8 +31,12 @@
               to="/admin/article/create"
               v-if="this.$store.state.isLoggedIn"
             >New Article</router-link>
-            
-            <a class="navbar-item" v-if="this.$store.state.isLoggedIn">Blog Settings</a>
+
+            <router-link
+              to="/admin/settings"
+              class="navbar-item"
+              v-if="this.$store.state.isLoggedIn"
+            >Blog Settings</router-link>
 
             <a
               class="navbar-item"
