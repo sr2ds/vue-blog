@@ -13,7 +13,8 @@ import './../node_modules/bulma/css/bulma.css';
 // Global Vue Settings
 Vue.config.productionTip = false
 Vue.use(VueAnalytics, {
-  id: 'UA-137046286-1'
+  id: 'UA-137046286-1',
+  router
 })
 
 // Global Blog Settings
