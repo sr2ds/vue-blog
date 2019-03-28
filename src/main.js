@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './pages/App.vue'
 import router from './routes'
 import VueAnalytics from 'vue-analytics'
 import store from './store'

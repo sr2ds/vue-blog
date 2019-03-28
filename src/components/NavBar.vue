@@ -14,7 +14,6 @@
         </div>
         <div id="navbarMenu" class="navbar-menu">
           <div class="navbar-end">
-
             <router-link
               class="navbar-item"
               v-if="this.$route.path != '/admin/login' && !this.$store.state.isLoggedIn"
@@ -27,7 +26,12 @@
               href="https://github.com/sr2ds/vue-blog"
             >Source Code on Github</a>
 
-            <a class="navbar-item" v-if="this.$store.state.isLoggedIn">New Article</a>
+            <router-link
+              class="navbar-item"
+              to="/admin/article/create"
+              v-if="this.$store.state.isLoggedIn"
+            >New Article</router-link>
+            
             <a class="navbar-item" v-if="this.$store.state.isLoggedIn">Blog Settings</a>
 
             <a
@@ -35,7 +39,6 @@
               v-if="this.$store.state.isLoggedIn"
               @click="$store.dispatch('logout')"
             >Logout</a>
-
           </div>
         </div>
       </div>
