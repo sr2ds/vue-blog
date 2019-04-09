@@ -1,5 +1,6 @@
   const path = require("path");
   const shell = require('child_process').execSync;
+  var fs = require('fs');
 
   const EventHooksPlugin = require('event-hooks-webpack-plugin');
 
@@ -17,11 +18,13 @@
              * Copy Build to Cordova 
              * 
              */
-            const src = `dist`;
-            const dist = `cordova/www`;
+            if (fs.existsSync('dist')) {
+              const src = `dist`;
+              const dist = `cordova/www`;
 
-            shell(`mkdir -p ${dist}; cp -r ${src}/* ${dist}`);
-            shell('sed -ic "s/\\=\\/vue-blog\\//\\=/g" cordova/www/index.html')
+              shell(`mkdir -p ${dist}; cp -r ${src}/* ${dist}`);
+              shell('sed -ic "s/\\=\\/vue-blog\\//\\=/g" cordova/www/index.html')
+            }
           }
         }),
       ]
